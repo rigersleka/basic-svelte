@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../src/App.html",
+    "../src/components/Configurator.html",
+    "../src/components/component1.html"
+  ],
+  "sourcesContent": [
+    "<!-- String Interpolation -->\n<h6>Hello {name} testing!</h6>\n\n<!-- Called Components -->\n<Configurator/>\n\n<Component1/>\n\n<!-- Methodology how svelte imports components -->\n<script>\n\timport Configurator from './components/Configurator.html';\n\timport Component1 from './components/component1.html';\n\n\texport default {\n\t\tcomponents: {\n\t\t\tConfigurator,\n\t\t\tComponent1\n\t\t}\n\t}\n</script>\n\n<!-- simple css-style -->\n<style>\n\th6 {\n\t\tcolor: purple;\n\t}\n</style>",
+    "<h5>Configurator Component</h5>\n\n\n<style>\n  h2 {\n    color: blue;\n  }\n\n  h5 {\n    color: red;\n    border: 2px;\n  }\n</style>",
+    "<h4>Hello Component1</h4>\n\n\n<style>\nh4 {\n    color: blue;\n}\n</style>"
+  ],
+  "names": [],
+  "mappings": "AAuBC,EAAE,cAAC,CAAC,AACH,KAAK,CAAE,MAAM,AACd,CAAC;ACjBA,EAAE,eAAC,CAAC,AACF,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,AACb,CAAC;ACPH,EAAE,cAAC,CAAC,AACA,KAAK,CAAE,IAAI,AACf,CAAC"
+}

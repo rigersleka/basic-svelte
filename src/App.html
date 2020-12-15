@@ -1,0 +1,27 @@
+<!-- String Interpolation -->
+<h6>Hello {name} testing!</h6>
+
+<!-- Called Components -->
+<Configurator/>
+
+<Component1/>
+
+<!-- Methodology how svelte imports components -->
+<script>
+	import Configurator from './components/Configurator.html';
+	import Component1 from './components/component1.html';
+
+	export default {
+		components: {
+			Configurator,
+			Component1
+		}
+	}
+</script>
+
+<!-- simple css-style -->
+<style>
+	h6 {
+		color: purple;
+	}
+</style>
